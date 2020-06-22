@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+    @media print {
+      #skills{display:none;}
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>陈子君</h1>
+      <img src="./images/avator.jpg" alt="" width="100" >
+      <p>
+        女 | 31岁 | 已婚已育 | 已定居上海 | 前端开发工程师
+      </p>
+      <p>
+        目前工资：10k*14
+      </p>
+      <p>
+        期望工资：18k*14
+      </p>
+      <p>
+        手机：13611690739 | 邮箱：330550740@qq.com
+      </p>
+    </section>
+
+
+
+
+
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>综合营销管理平台(GIMS)改版</h3>
+            <span>
+              <a href="https://github.com/AliceChenChina/GIMS" target="_blank">源码链接</a>
+            </span>
+          </header>
+          <p>
+            应用用途：帮助理财师管理客户、报单、处理订单等，帮助运营人员提供<strong>东家App</strong>后台管理工具，比如策略推荐管理等；
+          </p>
+          <p>
+            这个项目使用了<strong>Vue框架/Webpack/TypeScript</strong>，并对<strong>ElemeUI</strong>组件库进行进一步的封装；
+          </p>
+          <p style="margin-top: 10px">
+            之前老项目虽然也是用了Vue框架，但是使用的是页面引用的方式引入vue,每个页面都重复引入很多相同的css，js文件，没有mvc框架思想，也没有模块化思想，经过使用webpack作为构造工具，使用<strong>模块化思想</strong>与<strong>ES6语法</strong>，使得<strong>代码简单而且高效</strong>，<strong>大大提高了开发效率</strong>；
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>综合营销管理平台移动版（移动展业）</h3>
+            <span>
+              <a href="https://github.com/AliceChenChina/gims-wap" target="_blank">源码链接</a>
+            </span>
+          </header>
+          <p>
+            应用用途：此项目作用为GIMS移动版，是<strong>嵌入企业微信内</strong>，主要供<strong>理财师报单、客户维护、订单管理、为理财师提供分享活动、文章、海报的数据统计功能等等功能</strong>
+          </p>
+          <p>
+            这个项目使用了<strong>Vue框架/Webpack/less/stylus</strong>，并对移动端组件库<strong>Vux</strong>进行进一步的封装；
+          </p>
+
+          <p style="margin-top: 10px">
+            此项目属于老项目，并没有进行重构，因为其本身使用了webpack构造工具构建项目，使用了vue移动UI组件库Vux进行开发，项目开发也算规范，不过缺点是有些Vux的UI组件不再维护，在高版本的IOS系统会出现BUG,只能针对性解决；老代码有些代码也是冗余，不过因为项目已经在线运行，因此旧代码尽量不要更改，在开发新功能的时候再进行优化处理；
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>运营可后台配置自动生成可预约活动</h3>
+            <span>
+              <a href="https://github.com/AliceChenChina/reactActivity" target="_blank">源码链接</a>
+              <a href="https://spread.jd.com/activity-dongjia/activity_4885800000000203.html" target="_blank">项目预览</a>
+            </span>
+          </header>
+          <p>
+            应用用途：此项目主要可以让运营人员自己可以在后台配置生成各种活动，从而<strong>解放了开发人力资源</strong>，并且<strong>大大提高了制作活动的效率</strong>；
+          </p>
+          <p>
+            这个项目使用了<strong>React框架/JSX/Stylus/Joyer-cli(京东脚手架)</strong>，并对移动端组件库<strong>Vux</strong>进行进一步的封装；
+          </p>
+          <p>
+            这个项目虽然开发周期不算长，开发加测试大约1个月，但是对于公司来说却是效用特别好的项目，使得运行与技术部职能上很大的分离，大大提高了工作哦效率；
+          </p>
+        </li>
+      </ol>
+    </section>
+
+
+
+
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
+          <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+          <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，GIMS项目的一部分代码就是 TS 实现的</li>
+          <li>了解 <strong>Webpack 的配置和优化</strong></li>
+        </ul>
+      </div>
+    </section>
+    <section class="openSource" style="margin-top: 80px">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>会动的代码</h3>
+            <span>
+              <a href="https://github.com/AliceChenChina/autoMoving" target="_blank">源码链接</a>
+               <a href="http://chenzijun.top/autoMoving/" target="_blank">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个好玩作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="https://github.com/AliceChenChina/canvas" target="_blank">源码链接</a>
+              <a href="http://chenzijun.top/canvas/" target="_blank">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+        <li >
+          <header>
+            <h3>自作导航栏</h3>
+            <span>
+              <a href="https://github.com/AliceChenChina/navagation" target="_blank">源码链接</a>
+              <a href="https://github.com/AliceChenChina/navagation" target="_blank">项目预览</a>
+            </span>
+          </header>
+          <p>这是自己做了个导航栏，并用在自己的浏览器上面</p>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section class="jobs">
+      <h2>工作经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3> 京东金融上海子公司（上海东家金服投资管理有限公司） </h3>
+            <h4>前端开发工程师</h4>
+            <span><time>2018年10月</time>~<time>至今</time></span>
+          </header>
+          <ul>
+            <li>
+              前端团队人数：5
+            </li>
+            <li>
+              主要负责公司后台管理系统的PC端与移动端的开发、日常其他功能的开发；
+            </li>
+          </ul>
+        </li>
+        <li>
+          <header>
+            <h3>上海如艺实业有限公司</h3>
+            <h4>前端开发工程师</h4>
+            <span><time>2016年10月</time>~<time>2018年09月</time></span>
+          </header>
+          <ul>
+            <li>如艺商城的前端开发与日常维护、官网开发与维护</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://juejin.im/user/5e2ec00a5188254d95242faa/posts" target="_blank">我的博客</a>，目前已有 24 篇技术文章</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>证书</h2>
+      <p>
+        <span><time>2019年</time></span>
+        基金从业资格证</p>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2007年</time>~<time>2011年</time></span>
+        湖南涉外经济大学 国际经济与贸易 本科</p>
+    </section>
+
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
